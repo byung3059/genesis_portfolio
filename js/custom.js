@@ -8,7 +8,7 @@ $(function () {
             disableOnInteraction: false,
         },
         on: {
-            slideChangeTransitionEnd: function () {
+            slideChangeTransitionStart: function () {
                 $('.main_visual .main_visual_list li')
                     .eq(this.realIndex)
                     .addClass('on')
