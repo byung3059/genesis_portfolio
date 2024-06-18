@@ -29,7 +29,7 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30,
         on: {
-            slideChangeTransitionEnd: function () {
+            slideChangeTransitionStart: function () {
                 $('.main_product_dots li')
                     .eq(this.realIndex)
                     .addClass('on')
@@ -44,5 +44,9 @@ $(function () {
 
         main_product_slide.slideTo(idx, 400);
     });
+
+
+    AOS.init();
+
 
 })
