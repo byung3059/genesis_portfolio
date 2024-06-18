@@ -1,7 +1,15 @@
 :root {
-    --white-color: #ffffff;
+    --desc-color: #cccccc;
+    --white-color: #f9f9f9;
     --body-color: #ffffff;
     --black-color: #111111;
+}
+
+h2,
+strong,
+p,
+a {
+    color: var(--white-color);
 }
 
 .blind {
@@ -30,19 +38,22 @@
 .default .tit {
     max-width: 1410px;
     margin: 0 auto 40px auto;
+    color: var(--white-color);
 }
 
 .default .tit h2 {
     margin: 0 0 16px 0;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
+    color: var(--white-color);
 }
 
 .default .tit p {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
+    color: var(--white-color);
 }
 
 @media(max-width:768px) {
