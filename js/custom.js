@@ -45,6 +45,27 @@ $(function () {
         main_product_slide.slideTo(idx, 400);
     });
 
+    const main_content_slide = new Swiper('.content_slide', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.content_slide_dots li')
+                    .eq(this.realIndex)
+                    .addClass('on')
+                    .siblings()
+                    .removeClass('on');
+            }
+        }
+    })
+
+    $('.content_slide_dots li').on('click', function () {
+        let idx = $(this).index();
+
+        main_content_slide.slideTo(idx, 400);
+    })
 
     AOS.init();
 
