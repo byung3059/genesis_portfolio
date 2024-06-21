@@ -132,6 +132,12 @@ $(function () {
                     .addClass('on')
                     .siblings()
                     .removeClass('on');
+
+                $('.inner_space .space_slide_dots li')
+                    .eq(this.realIndex)
+                    .addClass('on')
+                    .siblings()
+                    .removeClass('on');
             }
         }
     })

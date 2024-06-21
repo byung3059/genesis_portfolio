@@ -57,13 +57,19 @@ body {
     width: 100%;
 }
 
+.header .inner .gnb {}
 
 .header .inner .gnb>ul {
     display: flex;
     gap: 40px;
 }
 
+.header .inner .gnb>ul>li {
+    line-height: 80px;
+}
+
 .header .inner .gnb>ul>li>a {
+    display: block;
     font-size: 16px;
     font-weight: 300;
     color: var(--desc-color);
@@ -655,12 +661,19 @@ body {
     gap: 16px;
     position: absolute;
     bottom: 0;
-    color: var(--white-color);
-    font-weight: 300;
+
 }
 
-.space_slide_dots li {}
+.space_slide_dots li {
+    color: var(--desc-color);
+    font-weight: 300;
+    cursor: pointer;
+}
 
+.space_slide_dots li.on {
+    color: var(--white-color);
+    font-weight: 400;
+}
 
 
 
