@@ -760,3 +760,33 @@ body {
     font-weight: 300;
     color: #999;
 }
+
+
+
+
+
+
+.to_top {
+    position: fixed;
+    z-index: 999;
+    bottom: 80px;
+    right: 100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.to_top.on {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.to_top button {
+    width: 42px;
+    height: 42px;
+    background: #222;
+}
+
+.to_top button i {
+    color: var(--white-color);
+    transform: rotate(-90deg);
+}

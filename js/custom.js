@@ -148,6 +148,22 @@ $(function () {
         main_space_slide.slideToLoop(idx, 400);
     })
 
+
+
+    $('.to_top button').on('click', function () {
+        $('html, body').animate({ scrollTop: 0, }, 300)
+    });
+
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        if (sct > 800) {
+            $('.to_top').addClass('on')
+        } else {
+            $('.to_top').removeClass('on')
+        }
+    })
+
     AOS.init();
 
 
