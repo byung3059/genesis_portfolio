@@ -17,6 +17,12 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/custom.js"></script>
 </head>
 
@@ -38,9 +44,66 @@
                 </ul>
             </div>
 
+            <div class="sub">
+                <ul>
+                    <li>
+                        <a href="">모델</a>
+                        <ul class="sub02">
+                            <li><a href="">G90 Black</a></li>
+                            <li><a href="">G90 Long Wheel Base</a></li>
+                            <li><a href="">G90</a></li>
+                            <li><a href="">G80</a></li>
+                            <li><a href="">G80 Electrified</a></li>
+                            <li><a href="">G70</a></li>
+                            <li><a href="">G70 Shooting Brake</a></li>
+                            <li><a href="">GV80</a></li>
+                            <li><a href="">GV80 Coupe</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">구매</a>
+                        <ul class="sub02">
+                            <li><a href="">견적내기</a></li>
+                            <li><a href="">전기차 구매 가이드</a></li>
+                            <li><a href="">구매 상담 신청</a></li>
+                            <li><a href="">제네시스 스펙트럼</a></li>
+                            <li><a href="">사양 조회하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">체험</a>
+                        <ul class="sub02">
+                            <li><a href="">스페이스</a></li>
+                            <li><a href="">시승 신청</a></li>
+                            <li><a href="">전시장 찾기</a></li>
+                            <li><a href="">드라이빙 익스피리언스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">멤버스</a>
+                        <ul class="sub02">
+                            <li><a href="">제네시스 멤버쉽</a></li>
+                            <li><a href="">MY GENESIS 앱</a></li>
+                            <li><a href="">테크놀로지</a></li>
+                            <li><a href="">차량관리 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">제네시스</a>
+                        <ul class="sub02">
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">제네시스 X 골프</a></li>
+                            <li><a href="">모터쇼</a></li>
+                            <li><a href="">로드트립</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
             <div class="util">
-                <a href=""><i class="xi-search"></i></a>
-                <button><i class="xi-bars"></i></button>
+                <button class="mbtn">
+                    <span>menu</span>
+                </button>
             </div>
         </div>
     </header>
@@ -115,7 +178,7 @@
                 </p>
             </div>
 
-            <div class="inner" data-aos="fade-left" data-aos-delay="100">
+            <div class="inner">
                 <div class="product_slide swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide itm itm01">
@@ -295,6 +358,80 @@
             </div>
         </section>
 
+        <section class="main_banner default">
+            <div class="tit">
+                <h2>Genesis Events</h2>
+                <p>제네시스에서 진행중인 다양한 이벤트를 소개합니다.</p>
+                <div class="ord">
+                    <a href="">이벤트 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_space default">
+            <div class="inner_space">
+                <div class="left">
+                    <div class="tit">
+                        <h2>OUR SPACES</h2>
+                    </div>
+                    <li class="on">
+                        <strong>Gangnam</strong>
+                        <p>도심 속 독립적인 인프라를 가진 공간으로<br />
+                            제네시스의 브랜드 가치와 품격을 보여줍니다.</p>
+                    </li>
+                    <li>
+                        <strong>Suji</strong>
+                        <p>강렬함과 세련됨이 공존하는 공간, 개인화된<br />
+                            서비스로 더 프라이빗하고 몰입감 높게 제네시스<br />
+                            를 경험할 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <strong>STUDIO Hanam</strong>
+                        <p>제네시스의 차량과 기술, 미래 비전이 담긴<br />
+                            콘텐츠를 통해 제네시스의 본질을 전합니다</p>
+                    </li>
+                    <li>
+                        <strong>STUDIO Anseong</strong>
+                        <p>한국적인 미를 지닌 공간에서 자유롭고<br />
+                            부담 없이 제네시스를 경험할 수 있습니다.</p>
+                    </li>
+
+                    <ul class="space_slide_dots">
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <div class="space_slide swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide itm itm01">
+                                <figure><img src="./images/main_space01.jpg" alt=""></figure>
+
+                            </div>
+                            <div class="swiper-slide itm itm02">
+                                <figure><img src="./images/main_space02.jpg" alt=""></figure>
+
+                            </div>
+                            <div class="swiper-slide itm itm03">
+                                <figure><img src="./images/main_space03.jpg" alt=""></figure>
+
+                            </div>
+                            <div class="swiper-slide itm itm04">
+                                <figure><img src="./images/main_space04.jpg" alt=""></figure>
+
+                            </div>
+                            <div class="swiper-slide itm itm05 blind">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
 
     </main>
@@ -322,6 +459,9 @@
                     <li><a href="">윤리경영 사이버 감사실</a></li>
                     <li><a href="">인재 채용</a></li>
                 </ul>
+
+                <address>&copy; Copyright 2024 Hyundai Motor Company.
+                    All Rights Reserved.</address>
             </div>
         </div>
     </footer>
