@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+
     background: var(--black-color);
 }
 
@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 .header .logo {
@@ -28,34 +29,6 @@ body {
     z-index: 9;
 }
 
-.header .inner .sub {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-}
-
-.header .inner .sub.on {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    transition: 0.3s;
-    visibility: visible;
-    opacity: 1;
-    background: #111;
-}
-
-.header .inner .sub.on ul {
-    margin: 80px auto 0 auto;
-    max-width: 1410px;
-    width: 100%;
-}
 
 .header .inner .gnb {}
 
@@ -76,7 +49,23 @@ body {
 }
 
 .header .inner .sub {
-    padding: 40px 0 0 0;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+.header .inner .sub.on {
+    top: 0;
+    transition: 0.5s;
+}
+
+.header .inner .sub ul {
+    margin: 120px auto 0 auto;
+    max-width: 1410px;
+    width: 100%;
 }
 
 .header .inner .sub>ul {
@@ -197,8 +186,68 @@ body {
 }
 
 @media (max-width:768px) {
+    .header {}
+
+    .header .inner {
+        padding: 0 16px;
+        height: 80px;
+    }
+
+    .header .inner .logo img {
+        width: 200px;
+    }
+
     .header .inner .gnb {
         display: none;
+    }
+
+    .header .inner .sub {
+        padding: 80px 16px;
+        top: 0;
+        left: unset;
+        right: -100%;
+        transition: 0.5s;
+        overflow-y: scroll;
+    }
+
+    .header .inner .sub.on {
+        right: 0;
+    }
+
+    .header .inner .sub>ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header .inner .sub>ul>li>a {
+        margin: 0;
+        line-height: 56px;
+        font-size: 16px;
+        border-bottom: 1px solid #222;
+    }
+
+    .header .inner .sub02 {
+        display: none;
+        background: #151515;
+    }
+
+    .header .inner .sub>ul>li .sub02 {
+        height: 200px;
+        overflow-y: scroll;
+    }
+
+    .header .inner .sub>ul>li .sub02>li {
+        border-bottom: 1px solid #222;
+    }
+
+    .header .inner .sub>ul>li .sub02>li>a {
+        font-size: 14px;
+        line-height: 56px;
+        padding-left: 16px;
+    }
+
+    .header .inner .util {
+        width: unset;
     }
 }
 
@@ -346,6 +395,25 @@ body {
     background: url(../images/main_visual07.jpg)no-repeat center center/cover;
 }
 
+@media(max-width:768px) {
+    .main_visual .main_visual_slide .itm {
+        position: relative;
+        height: calc(80vh - 80px);
+    }
+
+    .main_visual .main_visual_slide .itm .slg {
+        padding: 0 16px;
+    }
+
+    .main_visual .main_visual_tab_slide .main_visual_list {
+        z-index: 9;
+        position: relative;
+        left: unset;
+        bottom: unset;
+        transform: translate(0, 0);
+        margin-top: -100px;
+    }
+}
 
 
 
@@ -413,6 +481,7 @@ body {
 }
 
 @media(max-width:768px) {
+
     .main_product .product_slide .itm img {
         width: unset;
         height: unset;
@@ -569,7 +638,6 @@ body {
 .main_banner .tit .btn a {
     display: inline-block;
     padding: 19px 120px;
-    border: 1px solid #fff;
 }
 
 .main_banner .tit .btn a:hover {
@@ -580,6 +648,7 @@ body {
 
 @media(max-width:768px) {
     .main_banner {
+        padding: 32px 16px;
         background-position: 60%;
     }
 
@@ -683,6 +752,7 @@ body {
 
     .main_space .inner_space {
         flex-direction: column;
+        gap: 0;
     }
 
     .main_space .inner_space .left .space_desc li {
@@ -691,6 +761,12 @@ body {
 
     .space_slide_dots {
         position: static;
+        margin: 0 0 24px 0;
+    }
+
+    .main_space .inner_space .right .itm figure img {
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -742,7 +818,7 @@ body {
 }
 
 .footer .inner .fb {
-    border-top: 1px solid #333;
+    border-top: 1px solid #111;
     padding: 40px 0;
 }
 

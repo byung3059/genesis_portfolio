@@ -70,7 +70,7 @@ a {
 
 .ord {
     position: relative;
-    border: 1px solid #f9f9f9;
+    border: 1px solid #999;
 }
 
 .ord a {
@@ -89,9 +89,13 @@ a {
     transition: 0.5s;
 }
 
+.btn a {
+    border: 1px solid #999;
+}
+
 @media(max-width:768px) {
     .default {
-        padding: 80px 16px;
+        padding: 64px 16px;
     }
 
     .default .tit {
@@ -127,5 +131,12 @@ a {
 
     .ord a {
         padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .btn a {
+        border: 1px solid #999;
+
+        font-size: 14px
     }
 }

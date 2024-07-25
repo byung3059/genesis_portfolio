@@ -11,6 +11,28 @@ $(function () {
         $('.header .sub').toggleClass('on')
     })
 
+    $('.header .inner .sub>ul>li>a').on('click', function (e) {
+        $(this).parent().siblings().find('.sub02').stop().slideUp();
+
+        if ($('.header .inner .sub').hasClass('on')) {
+            e.preventDefault();
+
+            $(this).next().stop().slideToggle();
+        }
+    })
+
+    $('.header .inner .sub02>li>a').on('click', function (e) {
+
+        e.preventDefault();
+    })
+
+    $(window).on('resize', function () {
+        $('.header .gnb').removeClass('on');
+        $('.header .mbtn').removeClass('on');
+        $('.header .sub>ul>li ul').removeAttr('style');
+        $('.header .sub .sub02').removeAttr('style');
+    })
+
 
 
     const main_visual_slide = new Swiper('.main_visual_slide', {
@@ -65,6 +87,10 @@ $(function () {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
+            600: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
         },
     })
 
@@ -108,6 +134,7 @@ $(function () {
 
         slidesPerView: 2,
         spaceBetween: 30,
+
         on: {
             slideChangeTransitionStart: function () {
                 $('.inner_space .left .space_desc li')
