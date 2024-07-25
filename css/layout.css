@@ -3,6 +3,7 @@
     --white-color: #f9f9f9;
     --body-color: #ffffff;
     --black-color: #111111;
+    --background-color: #151515;
 }
 
 h2,
@@ -33,7 +34,7 @@ a {
 
 .default {
     padding: 120px 0;
-    background: var(--black-color);
+    background: var(--background-color);
 }
 
 .default .tit {
@@ -51,7 +52,7 @@ a {
     color: var(--white-color);
 }
 
-.default .tit p {
+.default .tit .desc {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -59,8 +60,72 @@ a {
     color: var(--desc-color);
 }
 
+.desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: var(--desc-color);
+}
+
+.ord {
+    position: relative;
+    border: 1px solid #f9f9f9;
+}
+
+.ord a {
+    display: block;
+    text-align: center;
+    padding: 20px 24px;
+}
+
+.ord:hover {
+    background: var(--white-color);
+    transition: 0.5s;
+}
+
+.ord a:hover {
+    color: var(--black-color);
+    transition: 0.5s;
+}
+
 @media(max-width:768px) {
     .default {
         padding: 80px 16px;
+    }
+
+    .default .tit {
+        max-width: 1410px;
+        margin: 0 auto 40px auto;
+        color: var(--white-color);
+    }
+
+    .default .tit h2 {
+        text-transform: uppercase;
+        margin: 0 0 16px 0;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--white-color);
+    }
+
+    .default .tit .desc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        color: var(--desc-color);
+    }
+
+    .desc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        color: var(--desc-color);
+    }
+
+    .ord a {
+        padding: 12px 24px;
     }
 }

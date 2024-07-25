@@ -1,39 +1,6 @@
 $(function () {
 
-    // const el = document.querySelector('.main_product');
 
-
-    // const ani = gsap.timeline({
-
-    //     scrollTrigger: {
-    //         trigger: ".main_product",
-    //         pin: true,
-    //         scrub: 3,
-    //         start: "top top",
-    //         markers: true,
-    //     }
-    // });
-    // const ani2 = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: ".main_content",
-    //         pin: true,
-    //         scrub: 5,
-    //         //start: "top top",
-    //         // markers: true,
-    //     }
-    // });
-
-    // ani.from('.main_product .inner', {
-    //     x: 500,
-    // }).to('.main_product .inner', {
-
-    // })
-
-    // ani2.from('.main_content .inner', {
-    //     scale: 1.1,
-    // }).to('.main_content .inner', {
-
-    // })
 
 
     $('.mbtn').on('click', function () {
@@ -61,7 +28,9 @@ $(function () {
                     .siblings()
                     .removeClass('on');
             }
-        }
+        },
+
+
     });
 
     $('.main_visual_list li').on('click', function () {
@@ -70,9 +39,15 @@ $(function () {
         main_visual_slide.slideToLoop(idx, 400);
     });
 
+
+
+
+
+
+
     const main_product_slide = new Swiper('.product_slide', {
 
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         on: {
             slideChangeTransitionStart: function () {
@@ -82,7 +57,15 @@ $(function () {
                     .siblings()
                     .removeClass('on');
             }
-        }
+        },
+
+        breakpoints: {
+
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
     })
 
     $('.main_product_dots li').on('click', function () {
@@ -127,7 +110,7 @@ $(function () {
         spaceBetween: 30,
         on: {
             slideChangeTransitionStart: function () {
-                $('.inner_space .left li')
+                $('.inner_space .left .space_desc li')
                     .eq(this.realIndex)
                     .addClass('on')
                     .siblings()
@@ -139,7 +122,15 @@ $(function () {
                     .siblings()
                     .removeClass('on');
             }
-        }
+        },
+
+        breakpoints: {
+
+            769: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        },
     })
 
     $('.space_slide_dots li').on('click', function () {
