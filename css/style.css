@@ -913,11 +913,11 @@ body {
 .footer .inner .ft>ul>li>a {
     font-size: 14px;
     font-weight: 300;
-    color: #eee;
+    color: #ddd;
 }
 
 .footer .inner .fb {
-    border-top: 1px solid #111;
+    border-top: 1px solid #222;
     padding: 40px 0;
 }
 
@@ -925,7 +925,7 @@ body {
     margin: 40px 0 0 0;
     font-size: 14px;
     font-weight: 300;
-    color: #eee;
+    color: #ddd;
 }
 
 .footer .inner .fb>ul {
@@ -952,7 +952,7 @@ body {
 .footer .inner .fb>ul>li>a {
     font-size: 14px;
     font-weight: 300;
-    color: #eee;
+    color: #ddd;
 }
 
 @media(max-width:768px) {
