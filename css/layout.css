@@ -95,7 +95,7 @@ a {
 
 @media(max-width:768px) {
     .default {
-        padding: 64px 16px;
+        padding: 80px 16px;
     }
 
     .default .tit {
@@ -138,5 +138,11 @@ a {
         border: 1px solid #999;
 
         font-size: 14px
+    }
+}
+
+@media(max-width:600px) {
+    .desc {
+        font-size: 12px;
     }
 }

@@ -38,10 +38,10 @@ $(function () {
     const main_visual_slide = new Swiper('.main_visual_slide', {
         loop: true,
         effect: 'fade',
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
         on: {
             slideChangeTransitionStart: function () {
                 $('.main_visual .main_visual_list li')
