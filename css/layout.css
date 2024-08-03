@@ -1,9 +1,14 @@
 :root {
     --desc-color: #cccccc;
     --white-color: #f9f9f9;
-    --body-color: #ffffff;
+    --body-color: #111111;
     --black-color: #111111;
+    --dots-color: #333333;
+    --dotson-color: #999999;
     --background-color: #151515;
+    --line-color: #222222;
+    --footer-color: #000000;
+    --footerli-color: #dddddd;
 }
 
 h2,
@@ -34,7 +39,6 @@ a {
 
 .default {
     padding: 120px 0;
-    background: var(--background-color);
 }
 
 .default .tit {

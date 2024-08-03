@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #111;
+    background: var(--black-color);
     overflow-x: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: var(--black-color);
 }
 
 .header .inner .sub.on {
@@ -223,12 +223,12 @@ body {
         margin: 0;
         line-height: 56px;
         font-size: 16px;
-        border-bottom: 1px solid #222;
+        border-bottom: 1px solid var(--line-color);
     }
 
     .header .inner .sub02 {
         display: none;
-        background: #151515;
+        background: var(--background-color);
     }
 
     .header .inner .sub>ul>li .sub02 {
@@ -237,7 +237,7 @@ body {
     }
 
     .header .inner .sub>ul>li .sub02>li {
-        border-bottom: 1px solid #222;
+        border-bottom: 1px solid var(--line-color);
     }
 
     .header .inner .sub>ul>li .sub02>li>a {
@@ -258,7 +258,7 @@ body {
 
 
 
-
+/* 메인 비주얼 */
 .main_visual {}
 
 .main_visual .main_visual_tab_slide .main_visual_list {
@@ -287,7 +287,7 @@ body {
     height: 100px;
     color: var(--white-color);
     cursor: pointer;
-    color: #999;
+    color: var(--dotson-color);
 }
 
 .main_visual .main_visual_tab_slide .main_visual_list li::before {
@@ -297,7 +297,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #222;
+    background: var(--line-color);
 }
 
 .main_visual .main_visual_tab_slide .main_visual_list li.on {
@@ -355,7 +355,7 @@ body {
     text-transform: uppercase;
     text-indent: 2px;
     line-height: 24px;
-    color: var(--body-color);
+    color: var(--white-color);
 }
 
 .main_visual .main_visual_slide .itm .slg strong {
@@ -364,7 +364,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 56px;
-    color: var(--body-color);
+    color: var(--white-color);
 }
 
 .main_visual .main_visual_slide .itm01 {
@@ -468,7 +468,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        border: 1px solid #333;
+        border: 1px solid var(--dots-color);
         width: 14px;
         height: 14px;
     }
@@ -480,7 +480,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         animation: none;
-        border: 2px solid #999;
+        border: 2px solid var(--dotson-color);
         background: transparent;
     }
 
@@ -492,7 +492,7 @@ body {
 
 
 
-
+/* 메인 프로덕트 */
 .main_product {
     position: relative;
 }
@@ -500,7 +500,7 @@ body {
 .main_product .product_slide .itm {
     position: relative;
     padding: 40px;
-    background: #191919;
+    background: var(--background-color);
     transition: 0.5s;
 }
 
@@ -542,13 +542,13 @@ body {
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background: #333;
+    background: var(--dots-color);
 
     cursor: pointer;
 }
 
 .main_product .main_product_dots li.on {
-    border: 2px solid #999;
+    border: 2px solid var(--dotson-color);
     background: transparent;
 }
 
@@ -570,9 +570,9 @@ body {
 
 
 
-
+/* 메인 컨텐트 */
 .main_content {
-    border-top: 1px solid #222;
+    border-top: 1px solid var(--line-color);
 }
 
 .main_content .tit h2 {
@@ -621,7 +621,7 @@ body {
     height: 64px;
     text-transform: uppercase;
     font-weight: 300;
-    color: #999;
+    color: var(--dotson-color);
     cursor: pointer;
 
 }
@@ -629,7 +629,7 @@ body {
 .main_content .inner .content_slide_dots li.on {
     position: relative;
     font-weight: 400;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .main_content .inner .content_slide_dots li::before {
@@ -639,7 +639,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #222;
+    background: var(--line-color);
 }
 
 .main_content .inner .content_slide_dots li.on::before {
@@ -875,7 +875,7 @@ body {
 
 
 .footer {
-    background: #000;
+    background: var(--footer-color);
 }
 
 .footer .inner {}
@@ -892,7 +892,7 @@ body {
 
 .footer .inner .ft>ul .b>a {
     font-size: 16px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .footer .inner .ft>ul>li {
@@ -907,17 +907,17 @@ body {
     transform: translate(-50%, -32%);
     width: 1px;
     height: 10px;
-    background: #333;
+    background: var(--dots-color);
 }
 
 .footer .inner .ft>ul>li>a {
     font-size: 14px;
     font-weight: 300;
-    color: #ddd;
+    color: var(--footerli-color);
 }
 
 .footer .inner .fb {
-    border-top: 1px solid #222;
+    border-top: 1px solid var(--line-color);
     padding: 40px 0;
 }
 
@@ -925,7 +925,7 @@ body {
     margin: 40px 0 0 0;
     font-size: 14px;
     font-weight: 300;
-    color: #ddd;
+    color: var(--footerli-color);
 }
 
 .footer .inner .fb>ul {
@@ -946,13 +946,13 @@ body {
     transform: translate(-50%, -32%);
     width: 1px;
     height: 10px;
-    background: #333;
+    background: var(--dots-color);
 }
 
 .footer .inner .fb>ul>li>a {
     font-size: 14px;
     font-weight: 300;
-    color: #ddd;
+    color: var(--footerli-color);
 }
 
 @media(max-width:768px) {
@@ -1015,7 +1015,7 @@ body {
 .to_top button {
     width: 42px;
     height: 42px;
-    background: #222;
+    background: var(--line-color);
 }
 
 .to_top button i {
