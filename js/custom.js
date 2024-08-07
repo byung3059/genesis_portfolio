@@ -208,7 +208,7 @@ $(function () {
 
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
-        console.log(sct);
+   
         if (sct > 800) {
             $('.to_top').addClass('on')
         } else {
