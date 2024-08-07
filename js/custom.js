@@ -1,7 +1,7 @@
 $(function () {
 
 
-
+    // 모바일 메뉴 //
 
     $('.mbtn').on('click', function () {
         $(this).toggleClass('on')
@@ -34,6 +34,7 @@ $(function () {
     })
 
 
+    // 메인 비주얼 //
 
     const main_visual_slide = new Swiper('.main_visual_slide', {
         loop: true,
@@ -65,7 +66,7 @@ $(function () {
 
 
 
-
+    // 메인 프로덕트 //
 
     const main_product_slide = new Swiper('.product_slide', {
 
@@ -104,7 +105,7 @@ $(function () {
 
 
 
-
+    // 메인 컨텐트 //
 
     const main_content_slide = new Swiper('.content_slide', {
         effect: 'fade',
@@ -118,6 +119,14 @@ $(function () {
                     .addClass('on')
                     .siblings()
                     .removeClass('on');
+
+                $('.m_content_dots li')
+                    .eq(this.realIndex)
+                    .addClass('on')
+                    .siblings()
+                    .removeClass('on');
+
+
             }
         }
     })
@@ -128,7 +137,14 @@ $(function () {
         main_content_slide.slideTo(idx, 400);
     })
 
+    $('.m_content_dots li').on('click', function () {
+        let idx = $(this).index();
 
+        main_content_slide.slideTo(idx, 400);
+    })
+
+
+    // 메인 스페이스 //
 
     const main_space_slide = new Swiper('.space_slide', {
 
@@ -167,6 +183,8 @@ $(function () {
     })
 
 
+
+    // top 버튼 //
 
     $('.to_top button').on('click', function () {
         $('html, body').animate({ scrollTop: 0, }, 300)
