@@ -209,7 +209,6 @@ body {
         left: unset;
         right: -100%;
         transition: 0.5s;
-        overflow-y: scroll;
     }
 
     .header .inner .sub.on {
