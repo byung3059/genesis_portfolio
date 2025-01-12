@@ -97,7 +97,18 @@ a {
     border: 1px solid var(--dotson-color);
 }
 
+@media(max-width:1450px) {
+    .inner {
+        padding: 0 40px;
+    }
+}
+
+
 @media(max-width:768px) {
+    .inner {
+        padding: 0;
+    }
+
     .default {
         padding: 80px 16px;
     }
@@ -120,7 +131,7 @@ a {
     .default .tit .desc {
         font-size: 14px;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 22px;
         text-align: center;
         color: var(--desc-color);
     }
@@ -128,7 +139,7 @@ a {
     .desc {
         font-size: 14px;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 22px;
         text-align: center;
         color: var(--desc-color);
     }
@@ -153,5 +164,6 @@ a {
 
     .desc {
         font-size: 12px;
+        line-height: 18px;
     }
 }
