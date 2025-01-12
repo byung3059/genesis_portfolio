@@ -131,7 +131,7 @@ a {
     .default .tit .desc {
         font-size: 14px;
         font-weight: 300;
-        line-height: 22px;
+        line-height: 21px;
         text-align: center;
         color: var(--desc-color);
     }
@@ -139,7 +139,7 @@ a {
     .desc {
         font-size: 14px;
         font-weight: 300;
-        line-height: 22px;
+        line-height: 21px;
         text-align: center;
         color: var(--desc-color);
     }
