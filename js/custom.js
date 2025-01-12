@@ -83,8 +83,7 @@ $(function () {
         },
 
         breakpoints: {
-
-            769: {
+            1200: {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
@@ -92,6 +91,7 @@ $(function () {
                 slidesPerView: 2,
                 spaceBetween: 30,
             },
+
         },
     })
 
@@ -147,8 +147,8 @@ $(function () {
     // 메인 스페이스 //
 
     const main_space_slide = new Swiper('.space_slide', {
-
-        slidesPerView: 2,
+        loop: true,
+        slidesPerView: 'auto',
         spaceBetween: 30,
 
         on: {
@@ -170,7 +170,7 @@ $(function () {
         breakpoints: {
 
             769: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
                 spaceBetween: 30,
             },
         },
@@ -208,7 +208,7 @@ $(function () {
 
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
-   
+
         if (sct > 800) {
             $('.to_top').addClass('on')
         } else {
